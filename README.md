@@ -1,3 +1,10 @@
+## how to switch between projects in github
+assuming you have several projects with different id_rsa keys. you need to work with your ssh agent to switch between using those
+```
+ssh-add -D 
+ssh-add ~/.ssh/<id_rsa_filename>   
+```
+
 # race-teller
 arkadiy kirsanov inspired tool to analyse racing data 
 
