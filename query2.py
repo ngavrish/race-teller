@@ -23,7 +23,7 @@ bucket = "29er"
 
 query_api = client.query_api()
 
-query = "from(bucket: \"29er\") |> range(start: -10m) |> filter(fn: (r) => r._value > 0)"
+query = "from(bucket: \"29er\") |> range(start: 2000-08-28T22:00:00Z)"
 tables = query_api.query(query, org="race-teller")
 
 for table in tables:
