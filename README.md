@@ -1,14 +1,9 @@
-## how to switch between projects in github
-assuming you have several projects with different id_rsa keys. you need to work with your ssh agent to switch between using those
-```
-ssh-add -D 
-ssh-add ~/.ssh/<id_rsa_filename>   
-```
 
-# race-teller
+
+### race-teller
 arkadiy kirsanov inspired tool to analyse racing data 
 
-# installation
+### installation
 brew update
 brew install telegraf
 brew install git
@@ -19,14 +14,28 @@ brew install influxdb
 brew install influxdb-cli
 corepack enable
 
-git clone https://github.com/grafana/grafana.git
+### influx db setup
+To start influxdb@1 now and restart at login:
+  ```brew services start influxdb@1```
+Or, if you don't want/need a background service you can just run:
+  ```/opt/homebrew/opt/influxdb@1/bin/influxd -config /opt/homebrew/etc/influxdb.conf```
 
-# influx db setup
+Create datasource
+> CREATE DATABASE twentyniner 
+> 
+> SHOW DATABASES
+
+
+### env
+PATH=/opt/homebrew/opt/influxdb@1/bin/:${PATH}
+INFLUX_TOKEN=gVHBPAhBd4qgWJuN3bHhJ5YpEiUdaBRKzE0Y1YqG_DVQ5nnXCxkGMtdb3Um_ONHPPTCTA_pcQ5eO3S4PERIKzw==
+export INFLUX_TOKEN
+
 open http://localhost:8086
 root token AtkVxYRj4UrZ7m67MTpYvLf0N5UsWCK987OkMtKlr41fjYoYFex6RnWXtvnW2jL4vrfNTzctgRR-2Xq-iIIcmw==
 all access token gVHBPAhBd4qgWJuN3bHhJ5YpEiUdaBRKzE0Y1YqG_DVQ5nnXCxkGMtdb3Um_ONHPPTCTA_pcQ5eO3S4PERIKzw==
 
-# authorization
+### influx authorization
 
 ```angular2html
 influx config create  --config-name race-teller-config --host-url http://localhost:8086  --org race-teller --token gVHBPAhBd4qgWJuN3bHhJ5YpEiUdaBRKzE0Y1YqG_DVQ5nnXCxkGMtdb3Um_ONHPPTCTA_pcQ5eO3S4PERIKzw== --active
@@ -53,7 +62,47 @@ telegraf -config ./telegraf.conf #create config
 telegraf -config /opt/homebrew/etc/telegraf.conf
 ```
 
-# Python env
+### Python env
 
 python -m venv envs/virtual-env && . ./envs/virtual-env/bin/activate
 pip install influxdb3-python pandas tabulate pip3 install influxdb-client
+
+
+## Install local grafana
+```
+make lefthook-install
+yarn install --immutable # to build the frontend assets, you need to install the related dependencies:
+yarn start # start building the source code
+make run # in the grafana folder
+yarn test
+go test -v ./pkg/...
+```
+
+By default, you can access the web server at http://localhost:3000/.
+
+Log in using the default credentials:
+
+username	password
+admin	admin
+
+### Configuration
+The default configuration, defaults.ini, is located in the conf directory.
+
+To override the default configuration, create a custom.ini file in the conf directory. You only need to add the options you wish to override.
+
+Enable the development mode by adding the following line in your custom.ini:
+```
+app_mode = development
+```
+
+https://docs.influxdata.com/telegraf/v1/get-started/
+https://www.influxdata.com/time-series-platform/
+https://docs.influxdata.com/influxdb/v1/
+
+
+### how to switch between projects in github
+assuming you have several projects with different id_rsa keys. you need to work with your ssh agent to switch between using those
+```
+ssh-add -D # clean id_rsa
+ssh-add ~/.ssh/<id_rsa_filename> # add new id_rsa 
+```
