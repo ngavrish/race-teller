@@ -5,32 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd56bd11-43ae-498f-bcd9-a701a0dbab8a" name="Changes" comment="updated influx v1 integration">
-      <change afterPath="$PROJECT_DIR$/../../openvidu-grafana-plugin/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../openvidu-grafana-plugin/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../openvidu-grafana-plugin/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/csv_with_processed/Atlas 1 01.04.2024.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/csv_with_processed/Fuwa 5.8.2024.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go2rtc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grafana/public/img/icons/marker/boat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grafana/public/img/icons/marker/sail_boat_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/telegraf_processed.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../openvidu-grafana-plugin/grafana/provisioning/datasources/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../openvidu-grafana-plugin/grafana/provisioning/datasources/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/dist/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/dist/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/dist/config.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/dist/config.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/dist/services/DBService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/dist/services/DBService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/dist/services/DBService.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/dist/services/DBService.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/race-teller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/race-teller.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv_with_processed/example.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafana/conf/defaults.ini" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/conf/defaults.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafana/packages/grafana-ui/src/components/RefreshPicker/RefreshPicker.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/packages/grafana-ui/src/components/RefreshPicker/RefreshPicker.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grafana/public/app/plugins/panel/geomap/style/markers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/app/plugins/panel/geomap/style/markers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telegraf_debug.conf" beforeDir="false" afterPath="$PROJECT_DIR$/telegraf_meta.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_with_processed/Atlas 1 01.04.2024.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv_with_processed/Atlas 1 01.04.2024.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_with_processed/Fuwa 5.8.2024.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv_with_processed/Fuwa 5.8.2024.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telegraf_processed.conf" beforeDir="false" afterPath="$PROJECT_DIR$/telegraf_processed.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +42,7 @@
     "Python.update_csv_with_meta.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/ngavrish/work/race-teller/race-teller",
+    "last_opened_file_path": "/Users/ngavrish/work/race-teller/race-teller/csv_with_processed",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,11 +55,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/csv_with_processed" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/grafana/data/plugins/openvidu-video-panel" />
       <recent name="$PROJECT_DIR$/grafana/data/plugins" />
       <recent name="$PROJECT_DIR$/grafana/public/img/icons/marker" />
-      <recent name="$PROJECT_DIR$/csv_example" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -161,7 +140,7 @@
       <updated>1728417225660</updated>
       <workItem from="1728417226808" duration="12103000" />
       <workItem from="1728479641629" duration="15846000" />
-      <workItem from="1728508762118" duration="69947000" />
+      <workItem from="1728508762118" duration="74281000" />
     </task>
     <task id="LOCAL-00001" summary="udpated telegraf conf">
       <option name="closed" value="true" />
@@ -179,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728730141307</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="updated influx v1 integration">
+      <option name="closed" value="true" />
+      <created>1729710517409</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729710517409</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
