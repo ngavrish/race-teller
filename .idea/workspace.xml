@@ -4,12 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd56bd11-43ae-498f-bcd9-a701a0dbab8a" name="Changes" comment="udpated telegraf conf">
-      <change afterPath="$PROJECT_DIR$/influxdb.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/update_csv_with_meta.py" afterDir="false" />
+    <list default="true" id="fd56bd11-43ae-498f-bcd9-a701a0dbab8a" name="Changes" comment="updated influx v1 integration">
+      <change afterPath="$PROJECT_DIR$/../../openvidu-grafana-plugin/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../openvidu-grafana-plugin/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../openvidu-grafana-plugin/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv_with_processed/Atlas 1 01.04.2024.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csv_with_processed/Fuwa 5.8.2024.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go2rtc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grafana/public/img/icons/marker/boat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grafana/public/img/icons/marker/sail_boat_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/telegraf_processed.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../openvidu-grafana-plugin/grafana/provisioning/datasources/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../openvidu-grafana-plugin/grafana/provisioning/datasources/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/dist/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/dist/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/dist/config.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/dist/config.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/dist/services/DBService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/dist/services/DBService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/dist/services/DBService.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/dist/services/DBService.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../openvidu-grafana-plugin/rtsp-application/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/race-teller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/race-teller.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telegraf_debug.conf" beforeDir="false" afterPath="$PROJECT_DIR$/telegraf_debug.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/conf/defaults.ini" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/conf/defaults.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/packages/grafana-ui/src/components/RefreshPicker/RefreshPicker.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/packages/grafana-ui/src/components/RefreshPicker/RefreshPicker.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/app/plugins/panel/geomap/style/markers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/app/plugins/panel/geomap/style/markers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telegraf_debug.conf" beforeDir="false" afterPath="$PROJECT_DIR$/telegraf_meta.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,32 +51,36 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2nAYDAdwQiHlLg5Gyrob0mF6Ghd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.query2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.update_csv_with_meta.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ngavrish/work/race-teller/race-teller&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.query2.executor": "Run",
+    "Python.update_csv_with_meta.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/ngavrish/work/race-teller/race-teller",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "ts.external.directory.path": "/Users/ngavrish/work/race-teller/race-teller/grafana/data/plugins/openvidu-video-panel/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/grafana/data/plugins/openvidu-video-panel" />
+      <recent name="$PROJECT_DIR$/grafana/data/plugins" />
+      <recent name="$PROJECT_DIR$/grafana/public/img/icons/marker" />
       <recent name="$PROJECT_DIR$/csv_example" />
-      <recent name="$PROJECT_DIR$/csv_inputs/single_file" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -136,7 +161,7 @@
       <updated>1728417225660</updated>
       <workItem from="1728417226808" duration="12103000" />
       <workItem from="1728479641629" duration="15846000" />
-      <workItem from="1728508762118" duration="27486000" />
+      <workItem from="1728508762118" duration="69947000" />
     </task>
     <task id="LOCAL-00001" summary="udpated telegraf conf">
       <option name="closed" value="true" />
@@ -146,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728561784390</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="updated influx v1 integration">
+      <option name="closed" value="true" />
+      <created>1728730141307</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728730141307</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +193,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="udpated telegraf conf" />
-    <option name="LAST_COMMIT_MESSAGE" value="udpated telegraf conf" />
+    <MESSAGE value="updated influx v1 integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated influx v1 integration" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/race_teller$update_csv_with_meta.coverage" NAME="update_csv_with_meta Coverage Results" MODIFIED="1728669986033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

@@ -4,7 +4,7 @@
 arkadiy kirsanov inspired tool to analyse racing data 
 
 ### installation
-brew update
+```brew update
 brew install telegraf
 brew install git
 brew install go
@@ -12,8 +12,16 @@ brew install node@20
 brew install corepack
 brew install influxdb
 brew install influxdb-cli
+brew install ffmpeg
 corepack enable
+brew install postgres
 
+-- insrall go2rtc
+cd go2rtc
+go build
+
+
+```
 ### influx db setup
 To start influxdb@1 now and restart at login:
   ```brew services start influxdb@1```
@@ -95,6 +103,16 @@ Enable the development mode by adding the following line in your custom.ini:
 app_mode = development
 ```
 
+
+### PostgreSQL
+
+```
+brew services start postgresql@17
+rm /opt/homebrew/var/postgres@17/postmaster.pid
+
+```
+
+
 https://docs.influxdata.com/telegraf/v1/get-started/
 https://www.influxdata.com/time-series-platform/
 https://docs.influxdata.com/influxdb/v1/
@@ -106,3 +124,9 @@ assuming you have several projects with different id_rsa keys. you need to work 
 ssh-add -D # clean id_rsa
 ssh-add ~/.ssh/<id_rsa_filename> # add new id_rsa 
 ```
+
+[//]: # (geomap know how)
+[//]: # (https://community.grafana.com/t/grafana-geomap-route/106009/6)
+
+[//]: # (https://community.grafana.com/t/synchronizing-cursor-movement-in-grafanas-time-series-panel-with-custom-panel-events/116891)
+[//]: # (https://grafana.com/developers/plugin-tools/tutorials/build-a-panel-plugin)

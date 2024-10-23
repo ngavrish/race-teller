@@ -1,13 +1,13 @@
-import { formatDuration } from 'date-fns';
-import { PureComponent } from 'react';
+import {formatDuration} from 'date-fns';
+import {PureComponent} from 'react';
 
-import { SelectableValue, parseDuration } from '@grafana/data';
-import { selectors } from '@grafana/e2e-selectors';
+import {SelectableValue, parseDuration} from '@grafana/data';
+import {selectors} from '@grafana/e2e-selectors';
 
-import { t } from '../../utils/i18n';
-import { ButtonGroup } from '../Button';
-import { ButtonSelect } from '../Dropdown/ButtonSelect';
-import { ToolbarButtonVariant, ToolbarButton } from '../ToolbarButton';
+import {t} from '../../utils/i18n';
+import {ButtonGroup} from '../Button';
+import {ButtonSelect} from '../Dropdown/ButtonSelect';
+import {ToolbarButtonVariant, ToolbarButton} from '../ToolbarButton';
 
 // Default intervals used in the refresh picker component
 export const defaultIntervals = ['5s', '10s', '30s', '1m', '5m', '15m', '30m', '1h', '2h', '1d'];
@@ -52,7 +52,7 @@ export class RefreshPicker extends PureComponent<Props> {
   }
 
   onChangeSelect = (item: SelectableValue<string>) => {
-    const { onIntervalChanged } = this.props;
+    const {onIntervalChanged} = this.props;
     if (onIntervalChanged && item.value != null) {
       onIntervalChanged(item.value);
     }
@@ -71,25 +71,25 @@ export class RefreshPicker extends PureComponent<Props> {
   }
 
   render() {
-    const { onRefresh, intervals, tooltip, value, text, isLoading, noIntervalPicker, width, showAutoInterval } =
+    const {onRefresh, intervals, tooltip, value, text, isLoading, noIntervalPicker, width, showAutoInterval} =
       this.props;
 
     const currentValue = value || '';
     const variant = this.getVariant();
-    const options = intervalsToOptions({ intervals, showAutoInterval });
-    const option = options.find(({ value }) => value === currentValue);
+    const options = intervalsToOptions({intervals, showAutoInterval});
+    const option = options.find(({value}) => value === currentValue);
     const translatedOffOption = translateOption(RefreshPicker.offOption.value);
     let selectedValue = option || translatedOffOption;
 
     if (selectedValue.label === translatedOffOption.label) {
-      selectedValue = { value: '' };
+      selectedValue = {value: ''};
     }
 
     const durationAriaLabel = selectedValue.ariaLabel;
     const ariaLabelDurationSelectedMessage = t(
       'refresh-picker.aria-label.duration-selected',
       'Choose refresh time interval with current interval {{durationAriaLabel}} selected',
-      { durationAriaLabel }
+      {durationAriaLabel}
     );
     const ariaLabelChooseIntervalMessage = t(
       'refresh-picker.aria-label.choose-interval',
@@ -101,6 +101,9 @@ export class RefreshPicker extends PureComponent<Props> {
     const tooltipAutoRefreshOff = t('refresh-picker.tooltip.turned-off', 'Auto refresh off');
     const tooltipAutoRefresh = selectedValue.value === '' ? tooltipAutoRefreshOff : tooltipIntervalSelected;
 
+    if ($("section[data-testid='data-testid Panel header Video']>div>div>video")[0] != undefined) {
+      $("section[data-testid='data-testid Panel header Video']>div>div>video")[0].load();
+    }
     return (
       <ButtonGroup className="refresh-picker">
         <ToolbarButton
@@ -109,7 +112,7 @@ export class RefreshPicker extends PureComponent<Props> {
           onClick={onRefresh}
           variant={variant}
           icon={isLoading ? 'spinner' : 'sync'}
-          style={width ? { width } : undefined}
+          style={width ? {width} : undefined}
           data-testid={selectors.components.RefreshPicker.runButtonV2}
         >
           {text}
@@ -158,9 +161,12 @@ export function translateOption(option: string) {
 }
 
 export function intervalsToOptions({
-  intervals = defaultIntervals,
-  showAutoInterval = false,
-}: { intervals?: string[]; showAutoInterval?: boolean } = {}): Array<SelectableValue<string>> {
+                                     intervals = defaultIntervals,
+                                     showAutoInterval = false,
+                                   }: {
+  intervals?: string[];
+  showAutoInterval?: boolean
+} = {}): Array<SelectableValue<string>> {
   const options: Array<SelectableValue<string>> = intervals.map((interval) => {
     const duration = parseDuration(interval);
     const ariaLabel = formatDuration(duration);

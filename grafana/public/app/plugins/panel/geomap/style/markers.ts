@@ -29,6 +29,7 @@ const MarkerShapePath = {
   star: 'img/icons/marker/star.svg',
   cross: 'img/icons/marker/cross.svg',
   x: 'img/icons/marker/x-mark.svg',
+  sailboat: 'img/icons/marker/sail_boat_icon.svg',
 };
 
 export function getFillColor(cfg: StyleConfigValues) {
