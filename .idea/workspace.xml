@@ -5,13 +5,93 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd56bd11-43ae-498f-bcd9-a701a0dbab8a" name="Changes" comment="updated influx v1 integration">
+      <change afterPath="$PROJECT_DIR$/grafana/public/img/apple-touch-icon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grafana/public/img/fav32.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grafana/public/img/grafana_icon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grafana/public/img/login_background.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_with_processed/Atlas 1 01.04.2024.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv_with_processed/Atlas 1 01.04.2024.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_with_processed/Fuwa 5.8.2024.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv_with_processed/Fuwa 5.8.2024.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_with_processed/example.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv_with_processed/example.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telegraf_meta.conf" beforeDir="false" afterPath="$PROJECT_DIR$/telegraf_meta.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telegraf_processed.conf" beforeDir="false" afterPath="$PROJECT_DIR$/telegraf_processed.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/devenv/dev-dashboards/datasource-testdata/new_features_in_v74.json" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/devenv/dev-dashboards/datasource-testdata/new_features_in_v74.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/devenv/dev-dashboards/datasource-testdata/new_features_in_v8.json" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/devenv/dev-dashboards/datasource-testdata/new_features_in_v8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v10-0.md" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v10-0.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v10-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v10-1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v10-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v10-2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v10-3.md" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v10-3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v10-4.md" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v10-4.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v11-0.md" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v11-0.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v11-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v11-1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v11-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v11-2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v9-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v9-2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v9-3.md" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v9-3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v9-4.md" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v9-4.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v9-5.md" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/docs/sources/whatsnew/whats-new-in-v9-5.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/emails/templates/signup_started.mjml" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/emails/templates/signup_started.mjml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/emails/templates/signup_started.txt" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/emails/templates/signup_started.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/emails/templates/welcome_on_signup.mjml" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/emails/templates/welcome_on_signup.mjml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/emails/templates/welcome_on_signup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/emails/templates/welcome_on_signup.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/packages/grafana-ui/.storybook/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/packages/grafana-ui/.storybook/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/packages/grafana-ui/.storybook/manager-head.html" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/packages/grafana-ui/.storybook/manager-head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/packages/grafana-ui/src/components/Card/Card.story.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/packages/grafana-ui/src/components/Card/Card.story.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/packages/grafana-ui/src/components/ToolbarButton/ToolbarButton.story.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/packages/grafana-ui/src/components/ToolbarButton/ToolbarButton.story.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/packages/grafana-ui/src/components/ToolbarButton/ToolbarButtonRow.story.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/packages/grafana-ui/src/components/ToolbarButton/ToolbarButtonRow.story.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/pkg/api/dtos/prefs.go" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/pkg/api/dtos/prefs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/pkg/api/index.go" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/pkg/api/index.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/pkg/api/swagger.go" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/pkg/api/swagger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/pkg/kinds/preferences/preferences_spec_gen.go" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/pkg/kinds/preferences/preferences_spec_gen.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/pkg/middleware/request_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/pkg/middleware/request_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/pkg/services/ldap/api/service_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/pkg/services/ldap/api/service_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/pkg/services/org/orgimpl/store.go" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/pkg/services/org/orgimpl/store.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/pkg/services/preference/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/pkg/services/preference/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/pkg/services/provisioning/dashboards/testdata/test-dashboards/dashboard-with-uid/dashboard1.json" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/pkg/services/provisioning/dashboards/testdata/test-dashboards/dashboard-with-uid/dashboard1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/pkg/services/provisioning/dashboards/testdata/test-dashboards/folder-one/dashboard1.json" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/pkg/services/provisioning/dashboards/testdata/test-dashboards/folder-one/dashboard1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/pkg/services/provisioning/dashboards/testdata/test-dashboards/folder-one/dashboard2.json" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/pkg/services/provisioning/dashboards/testdata/test-dashboards/folder-one/dashboard2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/pkg/services/provisioning/dashboards/testdata/test-dashboards/folders-from-files-structure/folderOne/dashboard1.json" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/pkg/services/provisioning/dashboards/testdata/test-dashboards/folders-from-files-structure/folderOne/dashboard1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/pkg/services/provisioning/dashboards/testdata/test-dashboards/folders-from-files-structure/folderTwo/dashboard2.json" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/pkg/services/provisioning/dashboards/testdata/test-dashboards/folders-from-files-structure/folderTwo/dashboard2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/pkg/services/provisioning/dashboards/testdata/test-dashboards/folders-from-files-structure/root.json" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/pkg/services/provisioning/dashboards/testdata/test-dashboards/folders-from-files-structure/root.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/pkg/services/provisioning/dashboards/testdata/test-dashboards/one-dashboard/dashboard1.json" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/pkg/services/provisioning/dashboards/testdata/test-dashboards/one-dashboard/dashboard1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/pkg/services/provisioning/dashboards/testdata/test-dashboards/two-dashboards-with-uid/dashboard1.json" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/pkg/services/provisioning/dashboards/testdata/test-dashboards/two-dashboards-with-uid/dashboard1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/pkg/services/provisioning/dashboards/testdata/test-dashboards/two-dashboards-with-uid/dashboard2.json" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/pkg/services/provisioning/dashboards/testdata/test-dashboards/two-dashboards-with-uid/dashboard2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/pkg/services/provisioning/dashboards/testdata/test-dashboards/unprovision/dashboard1.json" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/pkg/services/provisioning/dashboards/testdata/test-dashboards/unprovision/dashboard1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/pkg/services/sqlstore/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/pkg/services/sqlstore/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/pkg/tests/api/alerting/api_notification_channel_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/pkg/tests/api/alerting/api_notification_channel_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/app/core/components/AppChrome/MegaMenu/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/app/core/components/AppChrome/MegaMenu/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/app/core/components/AppChrome/News/NewsContainer.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/app/core/components/AppChrome/News/NewsContainer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/app/core/components/AppChrome/News/NewsWrapper.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/app/core/components/AppChrome/News/fixtures/news.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/app/core/components/AppChrome/TopBar/SingleTopBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/app/core/components/AppChrome/TopBar/SingleTopBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/app/core/components/AppChrome/TopBar/TopSearchBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/app/core/components/AppChrome/TopBar/TopSearchBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/app/core/components/BouncingLoader/BouncingLoader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/app/core/components/BouncingLoader/BouncingLoader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/app/core/components/Branding/Branding.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/app/core/components/Branding/Branding.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/app/core/components/Login/LoginPage.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/app/core/components/Login/LoginPage.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/app/core/components/Signup/SignupPage.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/app/core/components/Signup/SignupPage.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/app/features/admin/LicenseChrome.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/app/features/admin/LicenseChrome.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/app/features/alerting/unified/components/rule-editor/rule-types/GrafanaManagedAlert.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/app/features/alerting/unified/components/rule-editor/rule-types/GrafanaManagedAlert.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/app/features/alerting/unified/components/settings/InternalAlertmanager.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/app/features/alerting/unified/components/settings/InternalAlertmanager.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/app/features/alerting/unified/utils/datasource.ts" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/app/features/alerting/unified/utils/datasource.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/app/features/dashboard/components/PublicDashboard/usePublicDashboardConfig.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/app/features/dashboard/components/PublicDashboard/usePublicDashboardConfig.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/app/features/datasources/state/buildCategories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/app/features/datasources/state/buildCategories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/app/features/panel/components/PanelPluginError.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/app/features/panel/components/PanelPluginError.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/app/plugins/panel/gettingstarted/steps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/app/plugins/panel/gettingstarted/steps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/app/plugins/panel/welcome/Welcome.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/app/plugins/panel/welcome/Welcome.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/dashboards/default.json" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/dashboards/default.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/dashboards/home.json" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/dashboards/home.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/emails/signup_started.html" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/emails/signup_started.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/emails/signup_started.txt" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/emails/signup_started.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/emails/welcome_on_signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/emails/welcome_on_signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/emails/welcome_on_signup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/emails/welcome_on_signup.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/img/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/img/fav32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/img/g8_login_dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/img/g8_login_dark.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/img/g8_login_light.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/img/grafana_com_auth_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/img/grafana_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/img/grafana_mask_icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/img/grafana_mask_icon_white.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/sass/_variables.generated.scss" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/sass/_variables.generated.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/swagger/SwaggerPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/swagger/SwaggerPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/views/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/views/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grafana/public/views/swagger.html" beforeDir="false" afterPath="$PROJECT_DIR$/grafana/public/views/swagger.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +124,7 @@
     &quot;Python.update_csv_with_meta.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ngavrish/work/race-teller/race-teller/csv_with_processed&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ngavrish/work/race-teller/race-teller/grafana/public/img&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -57,11 +137,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/grafana/public/img" />
       <recent name="$PROJECT_DIR$/csv_with_processed" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/grafana/data/plugins/openvidu-video-panel" />
       <recent name="$PROJECT_DIR$/grafana/data/plugins" />
-      <recent name="$PROJECT_DIR$/grafana/public/img/icons/marker" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -142,7 +222,8 @@
       <updated>1728417225660</updated>
       <workItem from="1728417226808" duration="12103000" />
       <workItem from="1728479641629" duration="15846000" />
-      <workItem from="1728508762118" duration="84042000" />
+      <workItem from="1728508762118" duration="86479000" />
+      <workItem from="1729863132981" duration="12653000" />
     </task>
     <task id="LOCAL-00001" summary="udpated telegraf conf">
       <option name="closed" value="true" />
@@ -176,7 +257,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729715184110</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="updated influx v1 integration">
+      <option name="closed" value="true" />
+      <created>1729860332400</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729860332400</updated>
+    </task>
+    <task id="LOCAL-00006" summary="updated influx v1 integration">
+      <option name="closed" value="true" />
+      <created>1729860507706</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729860507706</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

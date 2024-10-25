@@ -68,11 +68,6 @@ export const getActiveItem = (
 ): NavModelItem | undefined => {
   const { id, parentItem } = currentPage;
 
-  // special case for the home page
-  if (url === '/') {
-    return navTree.find((item) => item.id === HOME_NAV_ID);
-  }
-
   // special case for profile as it's not part of the mega menu
   if (currentPage.id === 'profile') {
     return undefined;

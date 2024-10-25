@@ -80,8 +80,8 @@ const mainConfig: StorybookConfig = {
       to: '/public/img/grafana_text_logo-light.svg',
     },
     {
-      from: '../../../public/img/fav32.png',
-      to: '/public/img/fav32.png',
+      from: '../../../public/img/fav32.ico',
+      to: '/public/img/fav32.ico',
     },
     {
       from: '../../../public/lib',

@@ -13,7 +13,7 @@ import (
 	"github.com/grafana/grafana/pkg/util"
 )
 
-const mainOrgName = "Main Org."
+const mainOrgName = "Race-Teller"
 
 func (ss *SQLStore) getOrgIDForNewUser(sess *DBSession, args user.CreateUserCommand) (int64, error) {
 	if ss.cfg.AutoAssignOrg && args.OrgID != 0 {
