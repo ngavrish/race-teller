@@ -1,3 +1,3 @@
-timestamp,latitude,longitude,sog_kts,cog,hdg_true,roll,pitch,altitude_m,declination,region,class,measurement,turn
-2024-04-01T10:14:44.063,45.874475,10.8667516,1.5,236.9,3.4,-10.7,5.2,82,0.0,Lake Michigan,29er,processed_boat_telemetry,Tack
-2024-04-01T10:17:26.084,45.8748983,10.8661483,1.2,263.3,298.0,-10.4,5.0,69,3.1,Lake Michigan,29er,processed_boat_telemetry,GYBE
+timestamp,latitude,longitude,sog_kts,cog,hdg_true,roll,pitch,region,class,measurement,turn_int
+2024-04-01T10:14:44.063,45.874475,10.8667516,1.5,236.9,3.4,-10.7,5.2,Lake Michigan,29er,processed_boat_telemetry,1
+2024-04-01T10:17:26.084,45.8748983,10.8661483,1.2,263.3,298.0,-10.4,5.0,Lake Michigan,29er,processed_boat_telemetry,-1

@@ -130,3 +130,7 @@ ssh-add ~/.ssh/<id_rsa_filename> # add new id_rsa
 
 [//]: # (https://community.grafana.com/t/synchronizing-cursor-movement-in-grafanas-time-series-panel-with-custom-panel-events/116891)
 [//]: # (https://grafana.com/developers/plugin-tools/tutorials/build-a-panel-plugin)
+
+[//]: # (start app:  telegraf --config telegraf_processed.conf --once && yarn start --verbose &&  make run)
+
+[//]: # (-1 - оверштаг, 1 - фордевинд, 0 - без поворота)
