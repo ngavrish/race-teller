@@ -16,7 +16,7 @@ import { useDispatch, useSelector } from 'app/types';
 import { MegaMenuHeader } from './MegaMenuHeader';
 import { MegaMenuItem } from './MegaMenuItem';
 import { usePinnedItems } from './hooks';
-import { enrichWithInteractionTracking, findByUrl, getActiveItem } from './utils';
+import { enrichWithInteractionTracking, getActiveItem } from './utils';
 
 export const MENU_WIDTH = '300px';
 
@@ -39,27 +39,6 @@ export const MegaMenu = memo(
     const navItems = navTree
       .filter((item) => item.id !== 'profile' && item.id !== 'help')
       .map((item) => enrichWithInteractionTracking(item, state.megaMenuDocked));
-
-    if (config.featureToggles.pinNavItems) {
-      const bookmarksItem = findByUrl(navItems, '/bookmarks');
-      if (bookmarksItem) {
-        // Add children to the bookmarks section
-        bookmarksItem.children = pinnedItems.reduce((acc: NavModelItem[], url) => {
-          const item = findByUrl(navItems, url);
-          if (!item) {
-            return acc;
-          }
-          const newItem = {
-            id: item.id,
-            text: item.text,
-            url: item.url,
-            parentItem: { id: 'bookmarks', text: 'Bookmarks' },
-          };
-          acc.push(enrichWithInteractionTracking(newItem, state.megaMenuDocked));
-          return acc;
-        }, []);
-      }
-    }
 
     const activeItem = getActiveItem(navItems, state.sectionNav.node, location.pathname);
 

@@ -4,8 +4,8 @@ import * as React from 'react';
 import { GrafanaTheme2 } from '@grafana/data';
 import { selectors } from '@grafana/e2e-selectors';
 import { config } from '@grafana/runtime';
-import { Icon, IconButton, Link, useTheme2 } from '@grafana/ui';
-import { t } from 'app/core/internationalization';
+import { Icon, Link, useTheme2 } from '@grafana/ui';
+
 
 export interface Props {
   children: React.ReactNode;
@@ -50,19 +50,6 @@ export function MegaMenuItemText({ children, isActive, onClick, target, url, onP
       >
         {linkContent}
       </LinkComponent>
-      {config.featureToggles.pinNavItems && url && url !== '/bookmarks' && (
-        <IconButton
-          name="bookmark"
-          className={'pin-icon'}
-          iconType={isPinned ? 'solid' : 'default'}
-          onClick={() => onPin(url)}
-          aria-label={
-            isPinned
-              ? t('navigation.item.remove-bookmark', 'Remove from Bookmarks')
-              : t('navigation.item.add-bookmark', 'Add to Bookmarks')
-          }
-        />
-      )}
     </div>
   );
 }

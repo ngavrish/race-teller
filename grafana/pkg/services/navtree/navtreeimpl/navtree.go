@@ -21,7 +21,7 @@ import (
 	"github.com/grafana/grafana/pkg/services/pluginsintegration/pluginstore"
 	pref "github.com/grafana/grafana/pkg/services/preference"
 	"github.com/grafana/grafana/pkg/services/star"
-	"github.com/grafana/grafana/pkg/services/supportbundles/supportbundlesimpl"
+// 	"github.com/grafana/grafana/pkg/services/supportbundles/supportbundlesimpl"
 	"github.com/grafana/grafana/pkg/setting"
 )
 
@@ -157,7 +157,7 @@ func (s *ServiceImpl) GetNavTree(c *contextmodel.ReqContext, prefs *pref.Prefere
 		return nil, err
 	}
 
-	s.addHelpLinks(treeRoot, c)
+// 	s.addHelpLinks(treeRoot, c)
 
 	if err := s.addAppLinks(treeRoot, c); err != nil {
 		return nil, err
@@ -173,15 +173,15 @@ func (s *ServiceImpl) GetNavTree(c *contextmodel.ReqContext, prefs *pref.Prefere
 	}
 
 	if s.features.IsEnabled(c.Req.Context(), featuremgmt.FlagPinNavItems) {
-		treeRoot.AddSection(&navtree.NavLink{
-			Text:           "Bookmarks",
-			Id:             navtree.NavIDBookmarks,
-			Icon:           "bookmark",
-			SortWeight:     navtree.WeightBookmarks,
-			Children:       []*navtree.NavLink{},
-			EmptyMessageId: "bookmarks-empty",
-			Url:            s.cfg.AppSubURL + "/bookmarks",
-		})
+// 		treeRoot.AddSection(&navtree.NavLink{
+// 			Text:           "Bookmarks",
+// 			Id:             navtree.NavIDBookmarks,
+// 			Icon:           "bookmark",
+// 			SortWeight:     navtree.WeightBookmarks,
+// 			Children:       []*navtree.NavLink{},
+// 			EmptyMessageId: "bookmarks-empty",
+// 			Url:            s.cfg.AppSubURL + "/bookmarks",
+// 		})
 	}
 
 	return treeRoot, nil
@@ -225,39 +225,39 @@ func isSupportBundlesEnabled(s *ServiceImpl) bool {
 	return s.cfg.SectionWithEnvOverrides("support_bundles").Key("enabled").MustBool(true)
 }
 
-func (s *ServiceImpl) addHelpLinks(treeRoot *navtree.NavTreeRoot, c *contextmodel.ReqContext) {
-	if s.cfg.HelpEnabled {
-		// The version subtitle is set later by NavTree.ApplyHelpVersion
-		helpNode := &navtree.NavLink{
-			Text:       "Help",
-			Id:         "help",
-			Url:        "#",
-			Icon:       "question-circle",
-			SortWeight: navtree.WeightHelp,
-			Children:   []*navtree.NavLink{},
-		}
-
-		treeRoot.AddSection(helpNode)
-
-		hasAccess := ac.HasAccess(s.accessControl, c)
-		supportBundleAccess := ac.EvalAny(
-			ac.EvalPermission(supportbundlesimpl.ActionRead),
-			ac.EvalPermission(supportbundlesimpl.ActionCreate),
-		)
-
-		if isSupportBundlesEnabled(s) && hasAccess(supportBundleAccess) {
-			supportBundleNode := &navtree.NavLink{
-				Text:       "Support bundles",
-				Id:         "support-bundles",
-				Url:        "/support-bundles",
-				Icon:       "wrench",
-				SortWeight: navtree.WeightHelp,
-			}
-
-			helpNode.Children = append(helpNode.Children, supportBundleNode)
-		}
-	}
-}
+// func (s *ServiceImpl) addHelpLinks(treeRoot *navtree.NavTreeRoot, c *contextmodel.ReqContext) {
+// 	if s.cfg.HelpEnabled {
+// 		// The version subtitle is set later by NavTree.ApplyHelpVersion
+// // 		helpNode := &navtree.NavLink{
+// // 			Text:       "Help",
+// // 			Id:         "help",
+// // 			Url:        "#",
+// // 			Icon:       "question-circle",
+// // 			SortWeight: navtree.WeightHelp,
+// // 			Children:   []*navtree.NavLink{},
+// // 		}
+//
+// // 		treeRoot.AddSection(helpNode)
+//
+// 		hasAccess := ac.HasAccess(s.accessControl, c)
+// 		supportBundleAccess := ac.EvalAny(
+// 			ac.EvalPermission(supportbundlesimpl.ActionRead),
+// 			ac.EvalPermission(supportbundlesimpl.ActionCreate),
+// 		)
+//
+// 		if isSupportBundlesEnabled(s) && hasAccess(supportBundleAccess) {
+// // 			supportBundleNode := &navtree.NavLink{
+// // 				Text:       "Support bundles",
+// // 				Id:         "support-bundles",
+// // 				Url:        "/support-bundles",
+// // 				Icon:       "wrench",
+// // 				SortWeight: navtree.WeightHelp,
+// // 			}
+//
+// // 			helpNode.Children = append(helpNode.Children, supportBundleNode)
+// 		}
+// 	}
+// }
 
 func (s *ServiceImpl) getProfileNode(c *contextmodel.ReqContext) *navtree.NavLink {
 	// Only set login if it's different from the name

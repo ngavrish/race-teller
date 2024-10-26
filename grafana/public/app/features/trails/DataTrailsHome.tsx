@@ -10,7 +10,7 @@ import { Text } from '@grafana/ui/src/components/Text/Text';
 import { DataTrail } from './DataTrail';
 import { DataTrailCard } from './DataTrailCard';
 import { DataTrailsApp } from './DataTrailsApp';
-import { getBookmarkKey, getTrailStore } from './TrailStore/TrailStore';
+import { getTrailStore } from './TrailStore/TrailStore';
 import { reportExploreMetrics } from './interactions';
 import { getDatasourceForNewTrail, getUrlForTrail, newMetricsTrail } from './utils';
 
@@ -85,21 +85,6 @@ export class DataTrailsHome extends SceneObjectBase<DataTrailsHomeState> {
             </div>
           </div>
           <div className={styles.verticalLine} />
-          <div className={styles.column}>
-            <Text variant="h4">Bookmarks</Text>
-            <div className={styles.trailList}>
-              {getTrailStore().bookmarks.map((bookmark, index) => {
-                return (
-                  <DataTrailCard
-                    key={getBookmarkKey(bookmark)}
-                    bookmark={bookmark}
-                    onSelect={() => model.onSelectBookmark(index)}
-                    onDelete={() => onDelete(index)}
-                  />
-                );
-              })}
-            </div>
-          </div>
         </Stack>
       </div>
     );
